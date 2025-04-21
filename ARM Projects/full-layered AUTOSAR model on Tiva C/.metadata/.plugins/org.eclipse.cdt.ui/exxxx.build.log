@@ -1,0 +1,25 @@
+
+**** Build of configuration Debug for project exxxx ****
+
+"C:\\ti\\ccs1270\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building target: "exxxx.out"
+Invoking: Arm Linker
+"C:/ti/ccs1270/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"exxxx.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1270/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1270/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="exxxx_linkInfo.xml" --rom_model -o "exxxx.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined    first referenced
+  symbol          in file     
+ ---------    ----------------
+ SysTick_Init ./main.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "exxxx.out" not built
+ 
+>> Compilation failure
+makefile:136: recipe for target 'exxxx.out' failed
+gmake[1]: *** [exxxx.out] Error 1
+makefile:132: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
